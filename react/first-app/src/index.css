@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (min-width: 992px) {
+  .card-section{
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+
+article {
+  background-color: var(--color-primary);
+  position: relative;
+  border-bottom: 1rem;
+  box-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 0.4rem;
+  place-items:center;
+  width: 200px;
+  height: 280px;
+}
+
+article::after{
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 0.1rem;
+  content: "@";
+  border-radius:50%;
+  font-weight: 700;
+}
+
+.card{
+  width: 95%;
+  display: grid;
+  padding: 1rem 0.4rem 0rem 0.4rem;
+  gap: 0.4rem;
+  place-items: center;
+}
+
+.card img{
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.card hr{
+  width: 100%;
+}
+
+article .card-time{
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-third);
+  color: var(--color-dark);
+}
+
+article button {
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  border-radius:8px;
+  border: 2px solid var(--color-third);
+  background-color: var(--color-dark);
+  color: var(--color-third);
+  font-weight: 700;
+  transition: all 125ms ease;
+}
+
+article button:over {
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-third);
+  color: var(--color-dark);
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
