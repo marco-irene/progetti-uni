@@ -9,6 +9,8 @@ git merge nomeBranch
 git branch -d test //elimina branch
 git log //storia dei commit
 git reset +nome commit
+git rm nomefile
+git mv vecchionome nuovonome
 
 gitHub
 git remote add origin url
