@@ -6,11 +6,13 @@ git checkout nomefile.ex //per rimuovere modifiche del file
 git branch nomeBranch
 git checkout nomeBranch
 git merge nomeBranch
+git branch -d test //elimina branch
 git log //storia dei commit
 git reset +nome commit
 
 gitHub
 git remote add origin url
 git push -u origin master //caricare su gitHub tutti i file
+git push --set-upstream origin provaBranch
 git pull //pull dei file in locale
 git clone +url
