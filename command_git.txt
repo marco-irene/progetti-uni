@@ -13,9 +13,10 @@ git branch -d test //elimina branch
 git log //storia dei commit
 git reset +nome commit
 git rm nomefile
+git rm -r nomedirectory// solo su github
+git rm -r --cached nomedirectory //sia locale che su github
 git mv vecchionome nuovonome
 
-gitHub
 git remote add origin url
 git push -u origin master //caricare su gitHub tutti i file
 git push --set-upstream origin provaBranch
