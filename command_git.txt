@@ -1,3 +1,6 @@
+git config --global user.name “Mario Rossi”
+git config --global user.email mario.rossi@di.unito.it
+git config --global ui.color true
 git status
 git add nomefile.ex //(|| git add.)
 git commit - m "message"
