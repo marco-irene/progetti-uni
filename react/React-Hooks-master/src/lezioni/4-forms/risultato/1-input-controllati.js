@@ -32,7 +32,7 @@ const ControlledInput = () => {
       setPersone([
         ...persone,
         {
-          id: new Date(Date.now()).getTime().toString(),
+          id: new Date(Date.now()).getTime().toString(), // per id unico o usare librerie tipo uid
           nome,
           email,
           cellulare,
@@ -71,8 +71,8 @@ const ControlledInput = () => {
           id="nome"
           type="text"
           name="nome"
-          value={nome}
-          onChange={(e) => setNome(e.target.value)}
+          value={nome} //per riferimento agli usestate
+          onChange={(e) => setNome(e.target.value)} //.target restituisce l'elemento che onFocus in qst caso value
           className="form-control col-9"
         ></input>
       </div>
