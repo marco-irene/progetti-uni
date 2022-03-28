@@ -4,7 +4,9 @@ git config --global ui.color true
 git status
 git add nomefile.ex //(|| git add.)
 git commit - m "message"
+git fetch
 git push
+git diff //cosa hai modificato ma non ancora nello stage
 git checkout nomefile.ex //per rimuovere modifiche del file
 git branch nomeBranch
 git checkout nomeBranch
@@ -22,3 +24,5 @@ git push -u origin master //caricare su gitHub tutti i file
 git push --set-upstream origin provaBranch
 git pull //pull dei file in locale
 git clone +url
+git reset HEAD nomefile //rimuove dalla stage un file inserito ma non resetta le modifiche
+git commit --amend 
