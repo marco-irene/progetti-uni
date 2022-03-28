@@ -1,4 +1,4 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * js validator per la registrazione  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * js validator per la registrazione  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 const user  = document.getElementById("username");
 const email = document.getElementById("email");
 const pass  = document.getElementById("password");
