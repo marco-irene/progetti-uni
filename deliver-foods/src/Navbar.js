@@ -1,6 +1,7 @@
 import React, {useState,useEffect,useRef} from 'react';
 import { FaBars} from "react-icons/fa";
 import links from "./links"
+import { useGlobalContext } from './context';
 
 const Navbar = () => {
     const [show, setShow]=useState(false);

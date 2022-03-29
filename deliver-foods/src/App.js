@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import  {Menu} from "./components";
 import Navbar  from "./Navbar";
+import Sidebar from "./Sidebar";
 
 const getFromLocalStorage = () =>{ //salva l'ultimo valore del local storage nello stato
   if(localStorage.getItem('theme')){
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Sidebar/>
       <section className="section-center">
         <button style={{textAlign: "center"}}onClick={cambiaTema} className="btn-mode">Cambia</button>
         <Menu />
