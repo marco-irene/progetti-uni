@@ -1,0 +1,257 @@
+
+.box{
+  margin-top: 115px;
+}
+.prova {
+  z-index: 9999;
+}
+.gpt3__header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.gpt3__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 1rem;
+    z-index: 9999;
+}
+
+.gpt3__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.gpt3__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+
+    margin-top: 1.5rem;
+}
+
+.gpt3__header-content__input {
+    width: 50%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.gpt3__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: rgba(34,193,195,1);
+    border: 2px solid rgba(34,193,195,1);
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-radius: 25px
+}
+
+.gpt3__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.gpt3__header-content__people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+.gpt3__header-content__people p {
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+.gpt3__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-3rem;
+    z-index: 9999;
+}
+
+.gpt3__header-image svg {
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    .gpt3__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt3__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .gpt3__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .gpt3__header-content__people {
+        flex-direction: column;
+    }
+
+    .gpt3__header-content__people p {
+        margin: 0;
+    }
+
+    .gpt3__header-content__input input,
+    .gpt3__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .gpt3__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .gpt3__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .gpt3__header-content__input input,
+    .gpt3__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+#Candela1 {
+    animation: bounceC 1s infinite ease-out alternate;
+  }
+  
+  #interno1 {
+    animation: bounceI 1s infinite ease-out alternate;
+  }
+
+  #Candela2 {
+    animation: bounceC 0.8s infinite ease-out alternate;
+  }
+  
+  #interno2 {
+    animation: bounceI 0.8s infinite ease-out alternate;
+  }
+
+  #Candela3 {
+    animation: bounceC 0.73s infinite ease-out alternate;
+  }
+  
+  #interno3 {
+    animation: bounceI 0.73s infinite ease-out alternate;
+  }
+
+  @keyframes bounceC {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+  
+  @keyframes bounceI {
+    0% {
+      transform: translateY(18px);
+    }
+    100% {
+      transform: translateY(-48px);
+    }
+  }
+
+  #FettaM {
+    animation: animateM 3s linear infinite;
+  }
+
+  @keyframes animateM {
+    0% {
+      fill:#7FFFD4;
+    }
+    100% {
+      fill:aqua;
+    }
+  }
+
+  #FettaP {
+    animation: animateP 3s linear infinite;
+  }
+
+  @keyframes animateP {
+    0% {
+      fill:#FF7F50;
+    }
+    100% {
+      fill:#D2691E;
+    }
+  }
+
+  #FettaG {
+    animation: animateG 3s linear infinite;
+  }
+
+  @keyframes animateG {
+    0% {
+      fill:#FF69B4;
+    }
+    100% {
+      fill:#FF00FF;
+    }
+  }
